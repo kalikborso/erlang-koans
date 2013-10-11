@@ -3,11 +3,11 @@
 
 dictionaries_give_the_definition_of_a_key() ->
   Dict = dict:store(key, value, dict:new()),
-  __ =:= dict:fetch(key, Dict).
+  value =:= dict:fetch(key, Dict).
 
 append_assumes_something() ->
   Dict = dict:append(key, value, dict:new()),
-  __ =:= dict:fetch(key, Dict).
+  value =:= dict:fetch(key, Dict).
 
 fetching_what_is_not_available_is_troublesome() ->
   __ =:= bad_fetch().
